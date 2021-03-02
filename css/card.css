@@ -1,0 +1,94 @@
+
+        .card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card__box {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 150px;
+            /*width: 150px;*/
+            height: auto;
+            border-radius: 4px;
+            /*background-color: #fff;*/
+            text-align: center;
+            /*margin: 20px;
+            padding: 20px;*/
+            transition: all .4s ease;
+            color:#495057;
+
+            background:#FFF;
+            padding:60px 10px;
+            margin:30px 0px;
+        }
+
+        .card__icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            padding: 5px;
+            background-size: cover;
+            background-position: center center;
+        }
+        .card__icon img{
+
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .icon__header {
+            /*font-size: 24px;
+            line-height: 48px;*/
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+        }
+
+        .icon__text {
+            padding-top: 20px;
+            font-family: Verdana;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+
+        .icon__text p {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+
+        .card__box:hover {
+            background-color: #ffb949;
+            color: #fff;
+            cursor: pointer;
+            transform: translateY(-3px);
+        }
+
+        a {
+            color: #343a40;
+            outline: none !important;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:active {
+            text-decoration: underline;
+        }
