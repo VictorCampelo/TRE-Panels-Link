@@ -8,14 +8,14 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Simple Sidebar - Start Bootstrap Template</title>
+  <title>TRE - PI - Painéis Power Bi</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/simple-sidebar.css" rel="stylesheet">
-
+  <link href="css/card.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,14 +24,15 @@
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Start Bootstrap </div>
+      <div class="sidebar-heading">TRE - PI</div>
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+        <a href="#" class="btn list-group-item list-group-item-action bg-light " data-cad="todos">Dashboard</a>
+        <a href="#" class="btn list-group-item list-group-item-action bg-light " data-cad="gestaoProcessual">Gestão
+          Processual</a>
+        <a href="#" class="btn list-group-item list-group-item-action bg-light " data-cad="gestaoPessoas">Gestão de
+          Pessoas</a>
+        <a href="#" class="btn list-group-item list-group-item-action bg-light " data-cad="gestaoFinanceira">Gestão
+          Financeira/Orçamentária</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -40,7 +41,7 @@
     <div id="page-content-wrapper">
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+        <button class="btn btn-primary" id="menu-toggle">X</button>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,61 +51,132 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                Dropdown
+                Menu
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
+                <!-- <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item" href="#">Sair</a>
               </div>
             </li>
           </ul>
         </div>
       </nav>
 
-      <div class="container-fluid" style="height: 100%;">
-        <div class="main">
-          <iframe
-            src="https://app.powerbi.com/view?r=eyJrIjoiNGZlYjNhNjAtN2M2NS00NWY2LTgxZTMtMDM4ODA4YjUyYzIwIiwidCI6ImE4YzBmYjkwLTJlOTgtNDg5NC1iMjgzLTA3MjVmNjMxN2NmYSJ9&amp;pageName=ReportSection"
-            width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"
-            allowfullscreen="true"></iframe>
+      <div class="box">
+        <div class="container">
+          <div class="gestaos row">
+              <div class="tag gestaoProcessual col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+
+                <a href="gestaoprocessual.html">
+                  <div class="card__box">
+                    <div class="card__icon"><img src="./assets/icons/contratacoes.svg"></div>
+                    <div class="icon__text">
+                      <span class="icon__header"><strong>Gestão Processual 1º Grau</strong></span>
+  
+                    </div>
+                  </div>
+                </a>
+  
+  
+              </div>
+  
+              <div class="tag gestao gestaoPessoas col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  
+  
+                <div class="card__box">
+                  <div class="card__icon"><img src="./assets/icons/contratacoes.svg"></div>
+                  <div class="icon__text">
+                    <span class="icon__header"><strong>Contratações </strong></span>
+  
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="tag gestaoProcessual col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  
+  
+                <div class="card__box" onclick="link('index.html?BI=contratacoes')">
+                  <div class="card__icon"><img src="./assets/icons/contratacoes.svg"></div>
+                  <div class="icon__text">
+                    <span class="icon__header"><strong>Contratações </strong></span>
+  
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="tag gestaoFinanceira col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  
+  
+                <div class="card__box" onclick="link('index.html?BI=contratacoes')">
+                  <div class="card__icon"><img src="./assets/icons/contratacoes.svg"></div>
+                  <div class="icon__text">
+                    <span class="icon__header"><strong>Contratações </strong></span>
+  
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="tag gestaoFinanceira col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  
+  
+                <div class="card__box" onclick="link('index.html?BI=contratacoes')">
+                  <div class="card__icon"><img src="./assets/icons/contratacoes.svg"></div>
+                  <div class="icon__text">
+                    <span class="icon__header"><strong>Contratações </strong></span>
+  
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
         </div>
-
-
       </div>
-
-
+      <!-- /#page-content-wrapper -->
 
     </div>
+    <!-- /#wrapper -->
 
-
-
-  </div>
-  <!-- /#page-content-wrapper -->
-
-  </div>
-  <!-- /#wrapper -->
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Menu Toggle Script -->
-  <script>
-    $("#menu-toggle").click(function (e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
-  </script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $('.btn').on('click', function () {
+        var cat = $(this).attr('data-cad')
+        if (cat == 'todos') {
+          $('.gestaos div').show()
+        } else {
+          $('.gestaos .tag').each(function () {
+            if (!$(this).hasClass(cat)) {
+              $(this).hide()
+            } else {
+              $(this).show()
+            }
+          })
+        }
+      })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
 
 </body>
 
