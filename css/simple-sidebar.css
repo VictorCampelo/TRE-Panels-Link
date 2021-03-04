@@ -63,6 +63,8 @@ html, body, .main, .main iframe {
   -o-transition: margin .25s ease-out;
   transition: margin .25s ease-out;
   height: 5000px;
+  
+  background-color: #0d3316;
 }
 
 #sidebar-wrapper .sidebar-heading {
