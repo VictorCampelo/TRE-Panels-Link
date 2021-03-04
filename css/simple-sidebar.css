@@ -20,7 +20,7 @@ color: #0062cc;
 border-bottom:2px solid #0062cc;
 }
 .box{
-  padding:60px 0px;
+
 }
 
 .box-part{
@@ -62,11 +62,13 @@ html, body, .main, .main iframe {
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
   transition: margin .25s ease-out;
+  height: 5000px;
 }
 
 #sidebar-wrapper .sidebar-heading {
   padding: 0.875rem 1.25rem;
   font-size: 1.2rem;
+  TEXT-ALIGN: center;
 }
 
 #sidebar-wrapper .list-group {
