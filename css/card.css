@@ -70,7 +70,7 @@
         }
 
         .card__box:hover {
-            background-color: #ffb949;
+            background-color: #0d3316;
             color: #fff;
             cursor: pointer;
             transform: translateY(-3px);

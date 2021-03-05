@@ -8,7 +8,15 @@
     overflow-x: hidden;
  }
 
- body{
+html, body{
+  height:100%;
+  /*
+  }
+  next can be declared only for body but won't hurt if both html/body
+  body {
+  */
+  display:flex;
+  flex-flow:column;
   background: #eee;
 }
 span{
@@ -20,7 +28,8 @@ color: #0062cc;
 border-bottom:2px solid #0062cc;
 }
 .box{
-
+  height: 90%;
+  overflow-x: scroll;
 }
 
 .box-part{
@@ -62,7 +71,7 @@ html, body, .main, .main iframe {
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
   transition: margin .25s ease-out;
-  height: 5000px;
+  height: 100%;
   
   background-color: #0d3316;
 }
