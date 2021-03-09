@@ -28,8 +28,8 @@ color: #0062cc;
 border-bottom:2px solid #0062cc;
 }
 .box{
-  height: 90%;
-  overflow-x: scroll;
+  height: 85%;
+  overflow-x: hidden;
 }
 
 .box-part{
