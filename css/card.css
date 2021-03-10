@@ -55,7 +55,6 @@
         }
 
         .icon__text {
-            font-family: Verdana;
             height: 100px;
             line-height: 100px;
             text-align: center;
@@ -76,7 +75,7 @@
         }
 
         a {
-            color: #ffffff;
+            color: #0d3316;
             outline: none !important;
         }
 
